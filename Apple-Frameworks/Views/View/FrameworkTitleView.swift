@@ -11,17 +11,17 @@ struct FrameworkTitleView: View {
     let frameWork: Framework
     
     var body: some View {
-        VStack {
+        HStack {
             Image(frameWork.imageName)
                 .resizable()
-                .frame(width: 90, height: 90)
+                .frame(width: 70, height: 70)
             Text(frameWork.name)
                 .font(.title2)
                 .fontWeight(.semibold)
                 .scaledToFit()
                 .minimumScaleFactor(0.6)
+                .padding()
         }
-        .padding()
     }
 }
 
